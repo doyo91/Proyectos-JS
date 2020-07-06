@@ -31,7 +31,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+  padding: 100px 1rem;
   position: relative;
 }
 
@@ -51,6 +51,7 @@ header * {
 
 header h1 {
   margin: 0 0 30px;
+  text-align: center;
 }
 
 form {
@@ -103,6 +104,7 @@ ul.songs li {
   margin: 30px auto;
   max-width: 100%;
   width: 500px;
+  padding: 01rem;
 }
 
 .container h2 {

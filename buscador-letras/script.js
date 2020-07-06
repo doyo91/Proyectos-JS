@@ -21,7 +21,7 @@ function showData(data) {
         .map(
           song => `<li>
       <span><strong>${song.artist.name}</strong> - ${song.title}</span>
-      <button class="btn" data-artist="${song.artist.name}" data-songtitle="${song.title}">Get Lyrics</button>
+      <button class="btn" data-artist="${song.artist.name}" data-songtitle="${song.title}">Obtener letra</button>
     </li>`
         )
         .join('')}
@@ -32,12 +32,12 @@ function showData(data) {
     more.innerHTML = `
       ${
         data.prev
-          ? `<button class="btn" onclick="getMoreSongs('${data.prev}')">Prev</button>`
+          ? `<button class="btn" onclick="getMoreSongs('${data.prev}')">Anterior</button>`
           : ''
       }
       ${
         data.next
-          ? `<button class="btn" onclick="getMoreSongs('${data.next}')">Next</button>`
+          ? `<button class="btn" onclick="getMoreSongs('${data.next}')">Siguiente</button>`
           : ''
       }
     `;
@@ -74,7 +74,7 @@ form.addEventListener('submit', e => {
   const searchTerm = search.value.trim();
 
   if (!searchTerm) {
-    alert('Please type in a search term');
+    alert('Por favor escriba un término de búsqueda');
   } else {
     searchSongs(searchTerm);
   }
